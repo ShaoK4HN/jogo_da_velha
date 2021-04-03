@@ -1,4 +1,4 @@
-# Nome do produto
+# Jogo da Velha
 > Projeto de matemática discreta sobre aranjo simples
 
 ![](https://i.imgur.com/XEYAe2i.png)
