@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/game.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="app">
+        <div id="wrapper">
+          <!-- Make sure data-text equals the text you put inside the tags. -->
+          <h1
+            class="glitch"
+            data-text="
+		JOGO DA VELHA"
+          >
+            JOGO DA VELHA
+          </h1>
+          <span class="sub">1.0</span>
+        </div>
+        <section>
+          <div id="dvmenu">
+            <div id="dvQuemComeca">Quem Joga:</div>
+
+            <button class="coolBeans" onclick="inicia()">Iniciar Jogo</button>
+          </div>
+          <div id="nivelbutton">
+            <label for="nivel">Dificuldade:</label>
+            <button
+              id="nivelselector"
+              class="skewBtn blue"
+              onclick="document.getElementById('nivelselector').value = 1"
+            >
+              Mel na chupeta
+            </button>
+            <button
+              id="nivelselector"
+              class="skewBtn blue"
+              onclick="document.getElementById('nivelselector').value = 2"
+            >
+              Um tapinha não doe
+            </button>
+          </div>
+          <div id="dvjogo">
+            <div id="p1" class="posJogo" onclick="jogar(1)"></div>
+            <div id="p2" class="posJogo" onclick="jogar(2)"></div>
+            <div id="p3" class="posJogo" onclick="jogar(3)"></div>
+            <div id="p4" class="posJogo" onclick="jogar(4)"></div>
+            <div id="p5" class="posJogo" onclick="jogar(5)"></div>
+            <div id="p6" class="posJogo" onclick="jogar(6)"></div>
+            <div id="p7" class="posJogo" onclick="jogar(7)"></div>
+            <div id="p8" class="posJogo" onclick="jogar(8)"></div>
+            <div id="p9" class="posJogo" onclick="jogar(9)"></div>
+          </div>
+          <div>
+            <p id="quemganhou"></p>
+          </div>
+        </section>
+      </div>
+    </header>
+  </body>
+</html>
