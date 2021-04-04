@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100");
-html,
+
 body {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-#app {
   background: #0a0a0a;
   height: 100vh;
   width: 100%;
@@ -28,6 +27,28 @@ body {
   background-position: center;
   z-index: 1;
 }
+/* #app {
+  background: #0a0a0a;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)),
+    repeating-linear-gradient(
+      0,
+      transparent,
+      transparent 2px,
+      black 3px,
+      black 3px
+    );
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+} */
 #wrapper {
   text-align: center;
 }
@@ -39,7 +60,7 @@ body {
 .glitch {
   position: relative;
   color: white;
-  font-size: 4em;
+  font-size: 3.4em;
   letter-spacing: 0.5em;
   /* Animation provies a slight random skew. Check bottom of doc for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;
@@ -323,7 +344,7 @@ body {
 }
 
 /* botao do INICIAR JOGO */
-.coolBeans {
+#coolBeans {
   border: 2px solid currentColor;
   border-radius: 3rem;
   color: #e5989b;
@@ -339,7 +360,7 @@ body {
   z-index: 0;
   outline: none;
 }
-.coolBeans::after {
+#coolBeans::after {
   background-color: #b5838d;
   border-radius: 3rem;
   content: "";
@@ -355,10 +376,10 @@ body {
   will-change: transform;
   z-index: -1;
 }
-.coolBeans:hover::after {
+#coolBeans:hover::after {
   transform: translate(0, 0);
 }
-.coolBeans:hover {
+#coolBeans:hover {
   border: 2px solid transparent;
   color: #fff;
   transform: scale(1.05);
@@ -366,11 +387,7 @@ body {
 }
 
 /* Original para baixo */
-body {
-  font: roboto 3rem;
 
-  background: #6d6875;
-}
 header {
   text-align: center;
   text-transform: uppercase;
@@ -403,12 +420,12 @@ button {
   margin-right: auto;
   display: flex;
 }
-#dvQuemComeca {
+/* #dvQuemComeca {
   margin-left: 25%;
   margin-right: auto;
   display: flex;
   font: normal 15pt Arial;
-}
+} */
 .posJogo {
   width: 100px;
   height: 100px;
