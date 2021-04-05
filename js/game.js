@@ -171,9 +171,15 @@ function cpuJoga() {
 
     if (verifica != "") {
       //alert(verifica + " venceu");
-      document.getElementById("quemganhou").innerHTML += verifica + " venceu";
+      // mensagem do O que ganhou
+      document.getElementById("quemganhou").innerHTML += `${verifica} venceu`;
+
+      // document.getElementById(
+      //   "showwinner"
+      // ).innerHTML += `<img id="imgtiazinha" src="img/avatar.png">`;
       jogando = false;
     }
+
     atualizaTabuleiro();
     jogada++;
     quemJoga = 0;
@@ -269,7 +275,8 @@ function jogar(p) {
       document.getElementById("quemganhou").innerHTML = "";
       if (verifica != "") {
         //alert(verifica + " venceu");
-        document.getElementById("quemganhou").innerHTML += verifica + " venceu";
+        //mensagem de que o x venceu
+        document.getElementById("quemganhou").innerHTML += `${verifica} venceu`;
         jogando = false;
       }
       jogada++;
