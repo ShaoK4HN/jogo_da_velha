@@ -23,7 +23,8 @@ _Para mais exemplos, consulte a [Wiki][wiki]._
 
 ## Histórico de lançamentos
 
-
+* 1.2
+   * ADD Bootstrap no projeto
 * 1.0
     * Projeto em andamento
 
