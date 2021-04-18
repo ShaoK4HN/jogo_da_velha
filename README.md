@@ -22,8 +22,9 @@ _Para mais exemplos, consulte a [Wiki][wiki]._
 
 
 ## Histórico de lançamentos
-
-* 1.2
+* 1.1
+   * Novas features: Sistema de empate, mensagens de lado vencedor e escolha do lado.
+* 1.0.1
    * ADD Bootstrap no projeto
 * 1.0
     * Projeto em andamento
