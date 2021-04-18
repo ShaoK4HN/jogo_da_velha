@@ -7,28 +7,20 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/sweetalert2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <script src="js/game.js"></script>
     <title>Jogo da velha</title>
   </head>
   <body>
-    <script>
-      function abreModal() {
-        $("#myModal").modal({
-          show: true,
-        });
-      }
-
-      setTimeout(abreModal, 1000);
-    </script>
+  
     <header>
       <div id="wrapper" class="col justify-content-center">
-        <h1 class="glitch" data-text="JOGO DA VELHA">JOGO DA VELHA</h1>
-        <span class="sub">1.0</span>
+        <h1 class="glitch text-md-left"" data-text="JOGO DA VELHA">JOGO DA VELHA</h1>
+        <span class="sub">1.1</span>
       </div>
     </header>
 
@@ -46,7 +38,7 @@
             class="col-2 justify-content-center align-items-center text-uppercase"
             onclick="inicia()"
           >
-            Iniciar Jogo
+            PLAY
           </button>
         </div>
       </div>
@@ -67,7 +59,7 @@
         id="nivelbutton"
         class="d-flex flex-nowrap align-items-center ml-auto justify-content-center text-uppercase"
       >
-        <p class="p-2">Dificuldade:</p>
+        <p class="p-2 font-weight-bold ml-auto">Dificuldade:</p>
         <button
           id="nivelselector"
           class="skewBtn blue col-4 text-uppercase ml-auto"
@@ -80,11 +72,34 @@
           class="skewBtn blue col-4 text-uppercase m-4 ml-auto"
           onclick="document.getElementById('nivelselector').value = 2"
         >
-          Um tapinha não doe
+        Um tapinha não dói
         </button>
+       
       </div>
-      <div id="showwinner" class="justify-content-center">
-        <p id="quemganhou"></p>
+      <div class="d-flex flex-wrap row align-items-center justify-content-center clearfix">
+        <p class="text-uppercase font-weight-bold">Escolha um lado: </p>
+       <button type="button" id="escolherOLado" class="col skewBtn blue btn-lg col-2  " onclick="document.getElementById('escolherOLado').value = 1">X</button>
+       <button type="button" id="escolherOLado" class="col skewBtn blue btn-lg col-2 m-1" onclick="document.getElementById('escolherOLado').value = 2">0</button>
       </div>
+      
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+
+    <script>
+      Swal.fire({
+        title: 'Como jogar!',
+        text: "Escolha entre X ou O e uma dificuldade",
+        confirmButtonText: `Sei jogar`,
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+    </script>
   </body>
 </html>

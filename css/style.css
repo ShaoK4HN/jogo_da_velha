@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,700&display=swap");
+
 * {
   box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004) !important;
+  font-smooth: auto;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -35,11 +44,16 @@ body {
   color: #64dcdc;
   letter-spacing: 1em;
 }
-/* Our mixin positions a copy of our text directly on our existing text, while also setting content to the appropriate text set in the data-text attribute. */
+
+/* --------------------------------------------
+  Efeito do GLITCH no texto JOGO DA VELHA
+
+-----------------------------------------------*/
 .glitch {
   position: relative;
   color: white;
   font-size: 3.2em;
+  font-family: "Roboto";
   letter-spacing: 0.5em;
   /* Animation provies a slight random skew. Check bottom of doc for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;
@@ -320,7 +334,7 @@ body {
 #coolBeans {
   border: 2px solid currentColor;
   border-radius: 3rem;
-  color: #e5989b;
+  color: #e56b6f;
   font-family: roboto;
   font-size: 18px;
   font-weight: 100;
@@ -471,20 +485,30 @@ button {
   font-size: 2rem;
   font-weight: bold;
 }
-
-@media only screen and (min-width: 900px) {
-  /* styles for browsers larger than 960px; */
+/* 
+@media only screen and (min-width: 900px) and (width: 1200px) {
+  
 
   .glitch {
-    /* margin-top: 50px; */
+    margin-top: 10px;
     font-size: 4em;
+  }
+} */
+
+@media only screen and (max-width: 750px) and (min-width: 374px) {
+  .glitch {
+    margin-top: 10px;
+    font-size: 1.9em;
+  }
+  .sub {
+    display: none;
   }
 }
 
+/* STYLES HERE for DEVICES with physical max-screen width of 480px */
 @media only screen and (max-device-width: 375px) {
-  /* STYLES HERE for DEVICES with physical max-screen width of 480px */
   .glitch {
-    margin-top: 120px;
+    margin-top: 100px;
     font-size: 1.9em;
   }
 
@@ -493,11 +517,13 @@ button {
   }
 }
 
+/* styles for browsers larger than 960px; */
 @media only screen and (max-width: 575px) {
-  /* styles for browsers larger than 960px; */
-
   .glitch {
-    /* margin-top: 50px; */
+    margin-top: 15px;
     font-size: 2em;
+  }
+  .sub {
+    display: none;
   }
 }
