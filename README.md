@@ -29,5 +29,5 @@ _Para mais exemplos, consulte a [Wiki][wiki]._
 ## Meta
 
 Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
-[https://github.com/tiagohlazarinidev/]https://github.com/tiagohlazarinidev/)
+[https://github.com/tiagohlazarinidev/](https://github.com/tiagohlazarinidev/)
 
