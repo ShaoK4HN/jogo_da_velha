@@ -17,9 +17,6 @@ Escolha a dificuldade para maquina e aperte em iniciar jogo!
 
 _Para mais exemplos, consulte a [Wiki][wiki]._ 
 
-## Configuração para Desenvolvimento
-
-
 
 ## Histórico de lançamentos
 * 1.1
@@ -31,11 +28,6 @@ _Para mais exemplos, consulte a [Wiki][wiki]._
 
 ## Meta
 
-Tiago Henrique – [@ShaO_o]() – shaokahn.ti@gmail.com
-
 Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+[https://github.com/tiagohlazarinidev/]https://github.com/tiagohlazarinidev/)
 
-[https://github.com/ShaoK4HN/](https://github.com/ShaoK4HN/)
-
-
-[wiki]: https://github.com/ShaoK4HN/jogo_da_velha/wiki
