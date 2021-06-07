@@ -1,7 +1,7 @@
 # Jogo da Velha
 > Projeto de matemática discreta sobre aranjo simples
 
-![](https://i.imgur.com/XEYAe2i.png)
+![](https://i.imgur.com/sQrRUPl.png)
 
 ## Clonar Repository
 
